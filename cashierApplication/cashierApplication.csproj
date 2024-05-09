@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9620E90F-1463-4F46-9B91-0D21536B9487}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cashierApplication</RootNamespace>
+    <AssemblyName>cashierApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ana_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ana_ekran.Designer.cs">
+      <DependentUpon>ana_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bitir_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bitir_ekran.Designer.cs">
+      <DependentUpon>bitir_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genelciro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genelciro.Designer.cs">
+      <DependentUpon>genelciro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genel_yonetici_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genel_yonetici_ekran.Designer.cs">
+      <DependentUpon>genel_yonetici_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intro.Designer.cs">
+      <DependentUpon>intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kart_basvuru_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kart_basvuru_ekran.Designer.cs">
+      <DependentUpon>kart_basvuru_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kart_sorgu_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kart_sorgu_ekran.Designer.cs">
+      <DependentUpon>kart_sorgu_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasiyer_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasiyer_ekran.Designer.cs">
+      <DependentUpon>kasiyer_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="magaza_ciro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="magaza_ciro.Designer.cs">
+      <DependentUpon>magaza_ciro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="magaza_yonetici_ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="magaza_yonetici_ekran.Designer.cs">
+      <DependentUpon>magaza_yonetici_ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="magaza_yonetici_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="magaza_yonetici_login.Designer.cs">
+      <DependentUpon>magaza_yonetici_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok.Designer.cs">
+      <DependentUpon>stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YKM_DATABASEDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YKM_DATABASEDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ana_ekran.resx">
+      <DependentUpon>ana_ekran.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bitir_ekran.resx">
+      <DependentUpon>bitir_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genelciro.resx">
+      <DependentUpon>genelciro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genel_yonetici_ekran.resx">
+      <DependentUpon>genel_yonetici_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intro.resx">
+      <DependentUpon>intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kart_basvuru_ekran.resx">
+      <DependentUpon>kart_basvuru_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kart_sorgu_ekran.resx">
+      <DependentUpon>kart_sorgu_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasiyer_ekran.resx">
+      <DependentUpon>kasiyer_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="magaza_ciro.resx">
+      <DependentUpon>magaza_ciro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="magaza_yonetici_ekran.resx">
+      <DependentUpon>magaza_yonetici_ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="magaza_yonetici_login.resx">
+      <DependentUpon>magaza_yonetici_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="YKM_DATABASEDataSet.xsc">
+      <DependentUpon>YKM_DATABASEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet.xss">
+      <DependentUpon>YKM_DATABASEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet1.xsc">
+      <DependentUpon>YKM_DATABASEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet1.xss">
+      <DependentUpon>YKM_DATABASEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet10.xsc">
+      <DependentUpon>YKM_DATABASEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet10.xss">
+      <DependentUpon>YKM_DATABASEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet21.xsc">
+      <DependentUpon>YKM_DATABASEDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet21.xss">
+      <DependentUpon>YKM_DATABASEDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet3.xsc">
+      <DependentUpon>YKM_DATABASEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet3.xss">
+      <DependentUpon>YKM_DATABASEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet4.xsc">
+      <DependentUpon>YKM_DATABASEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet4.xss">
+      <DependentUpon>YKM_DATABASEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet5.xsc">
+      <DependentUpon>YKM_DATABASEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet5.xss">
+      <DependentUpon>YKM_DATABASEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet6.xsc">
+      <DependentUpon>YKM_DATABASEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet6.xss">
+      <DependentUpon>YKM_DATABASEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet7.xsc">
+      <DependentUpon>YKM_DATABASEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet7.xss">
+      <DependentUpon>YKM_DATABASEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet8.xsc">
+      <DependentUpon>YKM_DATABASEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet8.xss">
+      <DependentUpon>YKM_DATABASEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet9.xsc">
+      <DependentUpon>YKM_DATABASEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="YKM_DATABASEDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YKM_DATABASEDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YKM_DATABASEDataSet9.xss">
+      <DependentUpon>YKM_DATABASEDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
